@@ -1,29 +1,47 @@
 <template>
-  <b-navbar>
+  <b-navbar transparent centered spaced>
     <template #brand>
-      <b-navbar-item tag="router-link" :to="{ path: '/' }">
-        <img
-          src="https://raw.githubusercontent.com/buefy/buefy/dev/static/img/buefy-logo.png"
-          alt="Lightweight UI components for Vue.js based on Bulma"
-        />
+      <b-navbar-item id="main-logo" tag="router-link" :to="{ path: '/' }">
+        AGR
       </b-navbar-item>
     </template>
     <template #start>
-      <b-navbar-item tag="nuxt-link" :to="{ path: '/' }"> Home </b-navbar-item>
-      <b-navbar-item tag="nuxt-link" :to="{ path: '/' }"
-        >Documentation</b-navbar-item
+      <b-navbar-item
+        tag="nuxt-link"
+        :to="{ path: '/' }"
+        class="main-navbar-item"
       >
-    </template>
-
-    <template #end>
-      <b-navbar-item tag="div">
-        <div class="buttons">
-          <a class="button is-primary">
-            <strong>Sign up</strong>
-          </a>
-          <a class="button is-light"> Log in </a>
-        </div>
+        SOBRE MÍ
       </b-navbar-item>
+      <b-navbar-item
+        tag="nuxt-link"
+        :to="{ path: '/' }"
+        class="main-navbar-item"
+        >PROYECTOS</b-navbar-item
+      >
+      <b-navbar-item
+        tag="nuxt-link"
+        :to="{ path: '/' }"
+        class="main-navbar-item"
+      >
+        CONTACTO</b-navbar-item
+      >
     </template>
   </b-navbar>
 </template>
+
+
+<script>
+</script>
+
+
+<style>
+#main-logo {
+  font-size: 3rem;
+  font-family: "Lexend", sans-serif;
+}
+.main-navbar-item {
+  font-family: "Poppins", sans-serif;
+}
+</style>
+

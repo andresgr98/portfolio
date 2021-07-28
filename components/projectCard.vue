@@ -5,7 +5,7 @@
       alt=""
     />
     <h4 class="title is-4">{{ project.name }}</h4>
-    <p>{{ project.subtitle }}</p>
+    <h6 class="subtitle is-6">{{ project.subtitle }}</h6>
   </a>
 </template>
 

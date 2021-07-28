@@ -15,7 +15,7 @@
       </b-navbar-item>
       <b-navbar-item
         tag="nuxt-link"
-        :to="{ path: '/' }"
+        :to="{ path: '/projects' }"
         class="main-navbar-item"
         >PROYECTOS</b-navbar-item
       >

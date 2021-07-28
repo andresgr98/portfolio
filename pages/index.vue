@@ -2,7 +2,7 @@
   <div class="container">
     <section class="section">
       <div class="columns">
-        <div class="column is-one-quarter">
+        <div class="column is-one-quarter mr-3">
           <img
             src="@/static/img/IMG_0275.png"
             alt="Fotografia de Andrés Gómez"
@@ -25,14 +25,19 @@
         </div>
       </div>
     </section>
+    <section class="section">
+      <h3 class="title is-3">Proyectos recientes</h3>
+      <carousel></carousel>
+    </section>
   </div>
 </template>
 
 <script>
+import Carousel from "~/components/carousel.vue";
 export default {
   name: "index",
 
-  components: {},
+  components: { Carousel },
 };
 </script>
 <style>

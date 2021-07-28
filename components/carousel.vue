@@ -25,6 +25,7 @@
 
 <script>
 export default {
+  name: "carousel",
   data() {
     return {
       test: 0,
